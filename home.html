@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        body{
+            margin-top:10px;
+        }
+        #navbar{
+            width:100%;
+            height:50px;
+            display:flex;
+            justify-content:space-between;
+            border:0px solid red;
+            background-color: white;
+        }
+        #navbar>div:nth-child(1){
+            width:23%;
+            height:95%;
+            display:flex;
+            border:0px solid black;
+            justify-content:space-evenly;
+            
+        }
+        #navbar>div:nth-child(1)>h4{
+            font-size:28px;
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 100px;
+
+        }
+
+      
+
+        #navbar>div:nth-child(2){
+            width:30%;
+            height:100%;
+            border:0px solid black;
+            display:flex;
+            justify-content:space-around;
+            margin-right: 200px;
+            
+
+
+        }
+        #navbar>div:nth-child(3){
+            width:30%;
+            height:100%;
+            border:0px solid black;
+            display:flex;
+            justify-content:space-around;
+
+
+        }
+        a{
+            font-size:20px;
+            margin:auto;
+            color:rgb(79, 78, 78);
+            text-decoration: none;
+        }
+        #navbar>div:nth-child(3)>button{
+            width:30%;
+            height:100%;
+            margin-right:20px;
+            border-radius: 5px;
+            background-color:rgb(244, 125, 41);
+            color:white;
+            font-size:20px;
+            border:none;
+            
+        }
+        #navbar+div{
+           
+            margin:auto;
+            text-align: center;
+            margin-top: 100px;;
+        }
+        #navbar+div>h1{
+            width:60%;
+            font-size: 55px;
+            color:rgb(59, 58, 58);
+            margin:auto;
+        }
+        #navbar+div>p{
+            width:100%;
+            font-size: 22px;
+            line-height: 55px;
+            color:rgb(59, 58, 58);
+            margin:auto;
+            word-spacing: 1px;
+
+        }
+        #navbar+div>button{
+            width:18%;
+            height:50px;
+            margin:auto;
+            background:rgb(244, 125, 41);
+            color:white;
+            border:none;
+            font-size: 18px;
+        }
+        #box1{
+            width:90%;
+            height:800px;
+            border:0px solid black;
+            margin: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color:whitesmoke;
+            margin-top:50px;
+            text-align: center;
+
+        }
+        #box1>h3{
+            font-size: 30px;
+            color: rgb(55, 52, 52);
+            margin-top:60px;
+        }
+       
+
+            
+        
+        #box1>img{
+            width:85%;
+            height:50%;
+            margin:auto;
+        }
+        .box2{
+            width:90%;
+            height:30%;
+            border: 0px solid red;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: (2,100px);
+            gap:5px;
+            margin:auto;
+            
+        }
+        
+        .box2>div{
+            width:90%;
+            margin:auto;
+            border:0px solid red;
+            line-height: 40px;
+        }  
+        #box11{
+            width:70%;
+            height:1300px;
+            
+          
+            border:0px solid red;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: (2,auto);
+            gap:60px;
+            padding:40px;
+            background-color: whitesmoke;
+        } 
+        #box11>div{
+            width:100%;
+            height:100%;
+            border:0px solid black;
+            border-radius: 3px;
+            font-size: 20px;
+            color:rgb(59, 55, 55);
+            
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           
+            
+        }
+        h2{
+           
+            font-size: 30px;
+            color:black;
+            text-align: center;
+            margin-top:80px;
+        }
+        #box11>div>div:nth-child(1){
+            width: 100%;
+            height:25%;
+            border:0px solid red;
+            background-color:rgb(245, 172, 62);
+        }
+       
+        #box11>div>img{
+            margin-top:-60px;
+            margin-left:40px;
+            width:20%;
+            height:20%;
+        }
+        #box11>div>div:nth-child(3){
+            width:85%;
+            height:60%;
+            border:0px solid red;
+            margin:auto;
+            color:rgb(68, 65, 65);
+            line-height: 30px;
+            margin-top:30px;
+            font-size:20px;
+        }
+        #box11>div>div>button{
+            width:40%;
+            height:50px;
+            background-color: rgb(245, 219, 170);
+            color:orange;
+            margin-left:100px;
+            border:none;
+            font-size: 20px;
+            margin-top:40px;
+        }
+        #box11>div>div>button:hover{
+            background-color: rgb(245, 173, 90);
+            color:white;
+        }
+        #box30{
+            width:100%;
+            margin:auto;
+            text-align: center;
+            font-size:28px;
+            line-height:20px;
+            color:rgb(86, 79, 79);
+        }
+        .box33{
+            width:70%;
+            height:250px;
+            background-color:white ;
+            border:0px solid red;
+           
+            display:flex;
+            justify-content:space-evenly;
+            margin-top:50px;
+            margin:auto;
+        }
+        .box33>div{
+            width:25%;
+            height:100%;
+            border:0px solid red;
+            text-align:center;
+            font-size: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-top: 40px;
+            
+        }
+        .box33>div>img{
+            width:60%;
+            height:60%;
+        }
+        .box33>div:hover{
+            cursor: pointer;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #orange{
+            width:100%;
+            height:200px;
+            background-color: rgb(244, 125, 41);
+            margin-top:100px;
+            text-align: center;
+            padding:35px;
+            line-height:60px;
+        }
+        #orange>h4{
+            margin:auto;
+            color:white;
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+        #orange>button{
+            width:20%;
+            height:20%;
+            background-color: white;
+            color:rgb(244, 125, 41);
+            border:none;
+            border-radius: 2px;
+            font-size: 25px;
+
+        }
+        #orange>button:hover{
+            cursor: pointer;
+            background-color: rgb(239, 193, 161);
+
+
+        }
+        #last{
+            width:100%;
+            height:600px;
+            display: flex;
+            justify-content:space-between;
+            border:0px solid navy;
+            padding:20px;
+
+        }
+        #last>div:nth-child(1){
+            width:30%;
+            height:60%;
+            border:1px solid navy;
+            padding:20px;
+            color:grey;
+
+        }
+       .last1>p:hover{
+            color:black;
+            cursor: pointer;
+        }
+        #last>div:nth-child(1)>img{
+            width:15%;
+            height:15%;
+        }
+        #last>div:nth-child(1)>div{
+            width:100%;
+            height:28%;
+            border:0px solid navy;
+            text-align: center;
+            display: flex;
+            justify-content:space-between;
+            margin-top: 70px;
+        }
+       
+      
+
+
+
+
+
+       
+
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+             <img src="data:image/png;base64,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" />
+             <h4>CoSchedule</h4>
+        </div>
+       
+        <div>
+            <!-- 1st child box -->
+            
+            <a href="">Products</a>
+            <a href="">Why CoSchedule</a>
+            <a href="">Resources</a>
+            <a href="">Pricing</a>
+        </div>
+       <div>
+        <!-- 2nd child box -->
+            <a href="">Sign In</a>
+            <a href="">Get Started Free</a>
+            <button><b>Get A Demo</b></button>
+
+       </div>
+    </div>
+    <div>
+        <h1>Organize All Of Your Marketing In One Place. From Any Place.</h1>
+        <p>Get more done in less time with the only work management software for marketers.</p></br>
+
+        <button>Get Your Demo Now</button>
+    </div>
+
+
+    <div id="box1">
+        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75" alt="">
+        <h3>30,000 marketers start their day with CoSchedule </h3>
+            
+       
+        <div class="box2">
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fyamaha-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Funicef-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fvericast-logo2.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fwalgreens-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fdictionary-com-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fp-and-g-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fschwans-logo.webp&w=256&q=75" alt=""> </div>
+            <div><img src="" alt=""> </div>
+        </div>       
+    </div>
+   
+    <h2>Our Products</h2>
+    <div id="box11">    
+        <div>
+            <div></div>
+            <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=64&q=75" alt="">
+            <div>
+               <h4> Marketing Calendar </h4> 
+               <p>A calendar that helps you see, schedule, and share your marketing</p>
+               <ul>
+                <li>See everything together in one place</li>
+                <li>Share your progress with higher-ups</li>
+                <li>Show what your marketing is doing</li>
+               </ul>
+               
+               <button> Explore More</button>
+            </div>
+        </div>      
+        <div>
+            <div></div>
+            <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=64&q=75" alt="">
+            <div>
+               <h4> Marketing Suite</h4> 
+               <p>A family of agile marketing products to coordinate your team, projects, and process.</p>
+               <ul>
+                <li>Marketing Suite</li>
+                <li>Eliminate content bottlenecks</li>
+                <li>Maximize resources to increase output</li>
+              
+               </ul>
+               <button> Explore More</button>
+            </div>
+        </div> 
+        <div>
+            <div></div>
+            <img src="data:image/png;base64,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" alt="">
+            <div>
+               <h4> Actionable Marketing Institute</h4> 
+               <p>Develop new marketing skills in 30 minutes (or less).</p>
+               <ul>
+                <li>Improve your marketing with fluff-free training</li>
+                <li>Spend less time learning & more time doing</li>
+                <li>Learn from industry pros you trust</li>
+               </ul>
+               <button> Explore More</button>
+            </div>
+        </div>      
+        <div>
+            <div></div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSg8iW2KrTZfA3GDfNNfTHg5nkSLqy0sE5gY9C19NRUQ&s" alt="">
+            <div>
+               <h4>Headline Studio</h4> 
+               <p> Write better headlines that will boost your traffic.</p>
+               <ul>
+                <li> Score your headlines based on proven data</li>
+                <li>Improve headlines with smart suggestions</li>
+                <li>Find the high-scoring words instantly</li>
+                
+               </ul>
+               <button> Explore More</button>
+            </div>
+        </div>           
+    </div>      
+                 <!-- second part  -->
+               
+    <div id="box30">
+        <h3>The fastest growing marketing work management software</h3>
+        <p> CoSchedule is trusted by 30,000 marketers in 100+ countries.</p>
+     
+    </div>
+        
+    
+    <div class="box33">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKP2i1BEY7t05TzUhUQCKwVPclUJbZLC2sbXaLehp&s" alt="">
+            <p>The Gartner magic Quadrant for Content Marketing Platforms 2022 </p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Finc-5000-logo.png&w=256&q=75" alt="">
+            <p>One Of The Fastest Growing Marketing Platforms 3 Years In A Row </p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="">
+            <p>Awarded High Performer in 7 Product Category  </p>
+        </div>
+        
+
+    </div>    
+    
+    
+    
+    
+                                <!-- third part       -->
+    <div id="orange">
+        <h4>Organize All Of Your Marketing In One Place</h4>
+        <button>Request Your Demo Now</button>
+    </div>
+   
+   
+   
+   
+                       <!-- last part -->        
+                         <!-- one parent div and 2 child div -->
+                        
+        <div id="last">    
+            <!-- parent div -->
+            
+            <div class="last1">
+                <!-- 1st child box -->
+                <img src="data:image/png;base64,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" alt="">
+                <p>Sign Up</p>
+                <p>Request A Demo</p>
+                <p>Sign In</p>
+
+                <div>
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75" alt="">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75" alt="">
+
+                </div>
+            </div>
+            
+            
+            
+           
+            
+
+
+        </div>
+            
+
+              
+
+        
+       
+
+    
+
+
+
+           
+           
+        
+    
+   
+      
+
+    
+</body>
+</html>
