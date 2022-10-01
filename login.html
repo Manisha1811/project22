@@ -33,22 +33,23 @@
             height:100%;
             border:0px solid black;
             text-align: center;
+            font-size: 25px;
             
         }
 
         label{
-            text-align: center;
-            font-size: 20px;
+            color:grey
         }
         #container>div:nth-child(2)>img{
-            width:40%;
-            height:25%;
-            margin-top: -30px;
+            width:50%;
+            height:30%;
+            margin-bottom: -30px;
+            font-size: 25px;
         }
         form {
-            width: 85%;
-           
-            margin:auto;
+            width: 75%;
+            margin-top:-30px;
+            margin-left:80px;
             text-align: left;
            
   
@@ -59,32 +60,44 @@
         
         input{
 
-            width: 80%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            font-size: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
-        button{
+            width: 100%;
+            height:45px;
             
-            width: 80%;
-            padding: 8px;
             border: 1px solid #ccc;
-            font-size: 20px;
+            font-size: 16px;
+            box-sizing: border-box;
+            text-align: left;
+            margin-bottom: 16px;
+            
+        }
+
+        button{
+            background-color: white;
+            width: 100%;
+            height:45px;
+            border-radius: 3px;
+            border: 1px solid grey;
+            font-size: 16px;
             box-sizing: border-box;
             text-align: center;
             margin-bottom: 16px;
-            resize: vertical;
+            
               
        
         }
+        button:hover{
+            background-color: rgb(240, 240, 240);
+            border:1px solid rgb(52, 51, 51)
+        }
         button+p{
-            padding:2px;
-            text-align: center;
+           
+            margin:auto;
             font-size:20px ;
+            text-align: center;
+        }
+        input+button{
+            background-color: #F37E5D;
+            color:white;
         }
     </style>
 </head>
