@@ -69,11 +69,12 @@
             border:none;
             font-size: 16px;
             box-sizing: border-box;
-            text-align: center;
-            margin-left:245px ;
+            text-align:center;
+            margin-left:200px ;
             background-color: #f3b3a2;
             color:white;
             font-weight: bold;
+            margin-top: -30px;
         }
         form {
             width: 100%;
@@ -84,11 +85,13 @@
            
   
         }
-        p{ 
-            width:95%;
+        button+p{ 
+            width:90%;
             color:rgb(136, 136, 136);
-            font-size: 12px;
+            font-size: 10px;
             margin-top: 30px;
+            text-align: left;
+            letter-spacing: 0.8px;
 
 
         }
@@ -112,16 +115,17 @@
         <div id="container">
             <form action="">
             <label for="">Full Name</label><br>
-            <input type="text" placeholder="Full name"><br>
+            <input id="name" type="text" placeholder="Full name"><br>
             <label for="">Email Address</label><br>
-            <input type="email" placeholder="Work Email Address"><br>
+            <input id="email" type="email" placeholder="Work Email Address"><br>
             <label for="">Company</label><br>
-            <input type="text" placeholder="Company Name"><br>
+            <input id="company" type="text" placeholder="Company Name"><br>
             <label for="">Website URL</label><br>
-            <input type="text" placeholder="Company Website Url"><br>
-            <button>Next</button>
-            <p>By signing up, you agree to CoSchedule’s terms of service, end user agreement, and privacy policy; you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
+            <input id="company_url" type="text" placeholder="Company Website Url"><br>
         </form>
+        <button onClick="myFun()">Next</button>
+        <p>By signing up, you agree to CoSchedule's terms of service, end user agreement, and privacy policy; you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
+        
             
         </div>
 
@@ -131,3 +135,17 @@
     
 </body>
 </html>
+<script>
+    document.querySelector("button").addEventListener("onClick",myFun)
+function myFun(){
+     
+        var n=document.querySelector("#name").value;  
+        var e=document.querySelector("#email").value;  
+        var p=document.querySelector("#company").value;  
+        var cp=document.querySelector("#company_url").value;  
+        console.log(n,e,p,cp)
+        
+
+    }
+
+</script>

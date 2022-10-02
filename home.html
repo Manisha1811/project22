@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <link rel="icon" href="https://accounts.coschedule.com/img/cos-logo-horz.svg"/>
     <style>
         body{
             margin-top:10px;
@@ -204,7 +204,7 @@
             margin-top:-60px;
             margin-left:40px;
             width:20%;
-            height:20%;
+            height:15%;
         }
         #box11>div>div:nth-child(3){
             width:85%;
@@ -305,37 +305,82 @@
             display: flex;
             justify-content:space-between;
             border:0px solid navy;
-            padding:20px;
+            padding:40px;
+            letter-spacing: 1px;
+           
 
         }
         #last>div:nth-child(1){
-            width:30%;
+            width:18%;
             height:60%;
-            border:1px solid navy;
+            border:0px solid navy;
             padding:20px;
             color:grey;
+            font-size:12px ;
+            margin-left:60px;
+            padding:20px;
+           
 
         }
        .last1>p:hover{
             color:black;
             cursor: pointer;
         }
-        #last>div:nth-child(1)>img{
-            width:15%;
-            height:15%;
+        .last1>div>img{
+            width:20%;
+            height:50%;
+            
         }
         #last>div:nth-child(1)>div{
-            width:100%;
+            width:70%;
             height:28%;
             border:0px solid navy;
             text-align: center;
             display: flex;
             justify-content:space-between;
-            margin-top: 70px;
+            margin-top: 30px;
+        }
+        .last2{
+            width:50%;
+            color:grey; font-size:12px ;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,180);
+            border:0px solid red;
+            margin-right:200px ;
+            padding:20px;
+            gap:5px;
+            
+        }
+        .last2>div>p:hover{
+            color:rgb(62, 60, 60);
+            cursor:pointer;
         }
        
-      
-
+        /* mediaqery  for small screen */
+       
+        @media only screen and (max-width: 600px){
+        .last2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(2,180);
+            border:0px solid red;
+            margin-right:200px ;
+            padding:20px;
+            gap:5px;
+        }
+        #box11{
+           
+          
+            height:auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: (auto);
+            margin-bottom:20px;
+            gap:30px
+           
+        } 
+    }
 
 
 
@@ -374,8 +419,8 @@
     <div>
         <h1>Organize All Of Your Marketing In One Place. From Any Place.</h1>
         <p>Get more done in less time with the only work management software for marketers.</p></br>
-        <a href="request.html">
-            <button class="GFG">Get Started Free</button>
+        <a href="index.html">
+            <button class="GFG"  onClick="getStart()">Get Started Free</button>
         </a>
     </div>
 
@@ -519,6 +564,111 @@
 
                 </div>
             </div>
+
+            <div class="last2"> 
+                <div>
+                    <h4>  PRODUCTS</h4>
+                    <p> Marketing Calendar Icon</p>
+                    <p> Marketing Suite</p>
+                    <p>Headline Studio</p>
+                    <p>Headline Studio</p>
+                </div>    
+                
+                <div>
+                    <h4>WHY COSCHEDULE</h4>
+                    <p>Customer Stories</p>
+                    <p>Support</p>
+                    <p>Product Announcements</p>
+                    <p>Pricing</p>
+                </div>    
+                   
+                <div>
+                    <h4>COMPANY</h4>
+                    <p> About</p>
+                    <p> Jobs</p>
+                    <p> Press</p>
+                    <p> Contact Us</p>
+                    <p>Affiliate Program</p>
+                </div>    
+                  
+                   
+                <div>
+                    <h4>RESOURCES</h4>
+                    <p>Marketing Blog</p>
+                    <p>CoSchedule Guide</p>
+                    <p>Marketing Strategy Report</p>
+                    <p>Agile Marketing Guide</p>
+                    <p> Actionable Marketing Podcast</p>
+                    <p>10x Marketing Formula Book</p>
+                    <p>Get Started With Agile Marketing Book</p>
+                </div>       
+                   
+                <div>
+                    <h4>TOPIC LIBRARIES</h4>
+                    <p>Marketing</p>
+                    <p>Marketing Ideas</p>
+                    <p>Marketing Strategy</p>
+                    <p>Content Marketing </p>
+                </div>
+                
+                <div>
+                    <h4> TOOLS</h4>
+                    <p>Headline Analyzer</p>
+                    <p>Email Subject Line Tester</p>
+                    <p>Social Message Optimizer</p>
+                    <p>Marketing Dictionary</p>
+                    
+                </div>
+                
+               
+            </div>    
+                
+                
+        </div>        
+
+</body>
+</html>
+<script>
+
+
+    
+        document.querySelector(".GFG").addEventListener("onClickS",getStart)
+        function getStart(event){
+        alert("Stop coordinating marketing & start doing it. Complete up to 4x more projects with CoSchedule’s calendar products.")
+       
+    }
+</script>
+ 
+               
+               
+                   
+
+               
+                
+                
+              
+               
+                
+                
+               
+                
+                
+                   
+                    
+
+                
+                
+               
+                
+                
+                
+                
+
+                
+
+                
+
+            
             
             
             
@@ -526,7 +676,7 @@
             
 
 
-        </div>
+        
             
 
               
@@ -546,5 +696,3 @@
       
 
     
-</body>
-</html>
